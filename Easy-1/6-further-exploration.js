@@ -19,14 +19,10 @@ function invalidNumber(num) {
 
 let integers = [];
 
-getIntegers();
-
-function getIntegers() {
-  while (integers.length < 4) {
-    console.log('Please enter an integer greater than 0');
-    let number = readline.prompt();
-    validateIntegers(number);
-  }
+while (integers.length < 4) {
+  console.log('Please enter an integer greater than 0');
+  let number = readline.prompt();
+  validateIntegers(number);
 }
 
 function validateIntegers(num) {
